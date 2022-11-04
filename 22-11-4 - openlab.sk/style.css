@@ -1,0 +1,628 @@
+* {
+    font-family: 'SF Pro Display', sans-serif;
+    letter-spacing: 1px;
+    margin: 0; padding: 0; 
+    box-sizing: border-box;
+}
+
+.btn {
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.o {
+    z-index: 1;
+    width: 25%; height: 50%;
+    position: relative;
+    margin-left: 88%; margin-top: -240px;
+}
+
+/*                                                                              header                                                                      */
+header {
+    border-bottom: #d7eaff 1px solid;
+    width: 75%;
+    margin: auto;
+    margin-bottom: 20px; margin-top: 10px;
+    display: block;
+}
+ 
+header p {
+    margin-left: 15%;
+    display: inline;
+    margin-right: 30px; margin-left: 350px;
+    font-size: 0.9em;
+    font-family: 'SF Pro Display', sans-serif;
+    letter-spacing: 1px;
+}
+
+header button {
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 6px 10px; padding-bottom: 5px;
+    text-transform: uppercase;
+    color: #989ca2;
+    background-color: rgba(152, 156, 162, 0.15);
+    border-color: rgba(152, 156, 162, 0.15);
+    margin-bottom: 10px;
+}
+
+/*                                                                             menu                                                                        */
+
+.menu {
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+
+.menu ul{
+    list-style-type: none;
+    overflow: hidden;
+
+}
+
+.menu li{
+    float: left;
+}
+
+.menu li a{
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.menu li img{
+    margin-left: 25px;
+}
+
+.menu li button{
+    background-color: #3597ff;
+    border-color: #3597ff;
+    border-radius: 6px;
+    font-size: 14px;
+    padding: 12px 20px;
+    white-space: nowrap;
+    color: #fff;
+    border: none;
+    margin-top: 10px; margin-left: 600px;
+}
+
+/*                                                                              main                                                                           */
+
+.main {
+    display: block;
+}
+
+.main .container {
+    width: 101%; height: 450px;
+    margin-right: auto; margin-left: auto; margin-bottom: 100px;
+    background-color: #3597ff;
+}
+
+.main .container .twoRows {
+    display: flex;
+    height: max-content;
+}
+
+.main .container .twoRows .text {
+    width: 450px;
+    margin: 100px; margin-left: 300px;
+    color: white;
+    font-size: large;
+}
+
+.main .container .twoRows .text h1 {
+    font-weight: lighter;
+    font-size: 200%;
+}
+
+.main .container .twoRows .text span {
+    font-weight: bolder;
+    font-size: 200%;
+}
+
+.main .container .twoRows .text p {
+    margin-top: 40px;
+}
+
+.main .container .twoRows img {
+    height: 30%; width: 30%;
+    display: inline;
+    float: right;
+    margin-left: 200px;
+}
+
+/*                                                                          why                                                                         */
+.why {
+    width: 80%;
+    margin: auto; margin-top: 200px;
+}
+
+.why .text {
+    text-align: center;
+}
+
+.why .text h2{
+    margin-bottom: 20px;
+    font-weight: normal;
+    font-size: 250%;
+}
+
+.why .text label{
+    font-weight: bold;
+}
+
+.why .text p{
+    width: 800px;
+    margin: auto; margin-bottom: 50px;
+
+}
+
+.why .text .column {
+    float: left;
+    width: 33.33%;
+    text-align: start;
+}
+
+.why .text .column img, h3{
+    margin-bottom: 10px;
+}
+
+.why .text .column p{
+    width: 80%;
+    float: left;
+}
+
+/*                                                                              vision                                                                        */
+.vision {
+    display: block;
+    margin-top: 600px; margin-left: 300px;
+}
+
+.vision .container {
+    display: flex;
+}
+
+.vision .container .col-one {
+    display: inline;
+}
+
+.vision .container .col-one h2 {
+    font-weight: lighter;
+    font-size: 250%;
+    margin-top: 50px;
+}
+
+.vision .container .col-one h2 span {
+    font-weight: bold;
+}
+
+.vision .container .col-one p {
+    color: #566b8d;
+    width: 600px;
+}
+
+.vision .container .fourGrids {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    width: 500px;
+    margin-left: 150px;
+}
+
+.vision .container .fourGrids .one, .two, .three, .four {
+    width: 233px; height: 183px;
+    border-radius: 4px;
+    display: inline;
+}
+
+.vision .container .fourGrids .one {
+    color: #5b94d7;
+    background-color: rgba(221, 236, 251, 0.4);
+}
+
+.vision .container .fourGrids .two {
+    color: #5cc19a;
+    background-color: rgba(156, 238, 204, 0.4);
+}
+
+.vision .container .fourGrids .three {
+    color: #dbca68;
+    background-color: rgba(238, 226, 156, 0.4);
+}
+
+.vision .container .fourGrids .four {
+    color: #b95e73;
+    background-color: rgba(238, 156, 156, 0.4);
+}
+
+.vision .container .fourGrids h1 {
+    font-size: 5em;
+    margin-top: 55px;
+    float: right;
+    padding: 10px;
+}
+
+.vision .container .fourGrids p {
+    font-weight: bold;
+    float: right;
+}
+
+/*                                                                              labs                                                                          */
+
+.labs {
+    display: block;
+    margin-top: 300px; margin-left: 300px;
+}
+
+.labs .container {
+    width: 80%;
+}
+
+.labs .container .row {
+    display: flex;
+}
+
+.labs .container .row .main {
+    font-size: 160%;
+    margin-top: 75px; margin-left: 100px;
+}
+
+.labs .container .row .main h1 {
+    font-weight: lighter;
+}
+
+.labs .container .row .main span {
+    font-weight: bold;
+}
+
+.labs .container .row .columns {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 5px 30px;
+    width: 500px;
+    margin-left: 150px;
+}
+
+.labs .container .row .columns h1 {
+    margin-bottom: 10px;
+}
+
+.labs .container .row .columns p {
+    color: grey;
+    margin-bottom: 10px;
+}
+
+.labs .container .row .columns .one, .two, .three {
+    border-radius: 6px;
+    padding: 30px;
+    display: inline;
+    width: 150px;
+}
+
+.labs .container .row .columns .one:hover, .two:hover, .three:hover {
+    box-shadow: gray;
+    transition: 0.3s;
+    background-color: #fff;
+    border: 1px solid gray;
+}
+
+/*                                                                              location                                                                      */
+
+.location {
+    display: block;
+    margin-top: 300px; margin-left: 300px;
+}
+
+.location .container {
+    width: 80%;
+    justify-content: center;
+}
+
+.location .container .main {
+    display: block;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.location .container .main h1 {
+    font-weight: lighter;
+    font-size: 250%;
+}
+
+.location .container .main span {
+    font-weight: bold;
+}
+
+.location .container .cards {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 70px;
+}
+
+.location .container .cards .imgOne {
+    height: 85%; width: 85%;
+    margin-bottom: 20px;
+}
+
+.location .container .cards p {
+    color: gray;
+}
+
+.location .container .cards a {
+    float: right;
+    text-decoration: none;
+    color: rgb(69, 116, 218);
+}
+
+.location .container .cards h1 {
+    font-size: 125%;
+}
+
+.location .container .cards p, h1 {
+    display: inline;
+}
+
+.location .container .image img {
+    z-index: 1;
+    width: 33%; height: 66%;
+    position: relative;
+    margin-left: 109%; margin-top: -240px;
+}
+
+/*                                                                              it?                                                                           */
+
+.it {
+    display: block;
+}
+
+.it .container {
+    width: 101%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #f3f9ff;
+    height: 700px;
+    margin-bottom: 100px;
+}
+
+.it .container .twoRows {
+    display: flex;
+    height: max-content;
+}
+
+.it .container .twoRows .text {
+    width: 650px;
+    margin-top: 40px;
+    margin-left: 300px;
+    margin-top: 100px;
+    font-size: 150%;
+    font-size: large;
+}
+
+.it .container .twoRows .text .sign {
+    font-size: 62px;
+    color: rgba(209, 220, 231, 0.3);
+    z-index: 0;
+    font-weight: bold;
+}
+
+.it .container .twoRows .text h1 {
+    font-weight: lighter;
+    font-size: 200%;
+}
+
+.it .container .twoRows .text span {
+    font-weight: bolder;
+    font-size: 200%;
+}
+
+.it .container .twoRows .text p {
+    margin-top: 40px;
+    color: gray;
+}
+
+.it .container .twoRows .text h3 {
+    margin-top: -30px;
+}
+
+.it .container .twoRows .text button {
+    background-color: #3597ff;
+    border-color: #3597ff;
+    border-radius: 6px;
+    font-size: 14px;
+    padding: 24px 40px;
+    white-space: nowrap;
+    color: #fff;
+    border: none;
+    margin-top: 40px;
+}
+
+.it .container .twoRows img {
+    height: 45%;
+    width: 45%;
+    display: inline;
+    float: right;
+    margin-left: 100px;
+    margin-top: 33px;
+}
+
+/*                                                                              join-us                                                                           */
+
+.join-us {
+    display: inline;
+}
+
+.join-us .container .rows .row-one {
+    font-size: 160%;
+    margin-top: 75px; margin-bottom: 75px;
+    text-align: center;
+}
+
+.join-us .container .rows .row-one h2 {
+    font-weight: lighter;
+}
+
+.join-us .container .rows .row-one span {
+    font-weight: bold;
+}
+
+.join-us .container .rows .columns {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 5px 30px;
+    width: 500px;
+    margin-left: 250px;
+}
+
+.join-us .container .rows .columns .one, .two, .three, .four {
+    border-radius: 6px;
+    padding: 30px;
+    display: inline;
+    width: 250px;
+}
+
+.join-us .container .rows .columns .one:hover, .two:hover, .three:hover, .four:hover {
+    box-shadow: gray;
+    transition: 0.3s;
+    background-color: #fff;
+    border: 1px solid gray;
+}
+
+.join-us .container .rows .columns h5 {
+    font-weight: bold;
+    font-size: 150%;
+    padding: 5px; margin-bottom: 5px;
+}
+
+.join-us .container .rows .columns p, img {
+    color: gray;
+    padding: 5px;
+}
+
+/*                                                                              labmasters                                                                           */
+
+.labmasters {
+    display: inline;
+    width: 80%;
+}
+
+.labmasters .slider {
+    position: relative;
+    width: 60%;
+    height: 800px;
+    overflow: hidden;
+    margin-left: auto; margin-right: auto;
+    margin-top: 300px;
+}
+
+.labmasters .slider .images {
+    display: flex;
+}
+
+.labmasters .slider .images img {
+    height: 600px; width: 1140px;;
+    transition: all 0.15s ease;
+    border-radius: 20px;
+}
+
+.labmasters .slider .images input {
+    display: none;
+}
+
+.labmasters .slider .images .text1 {
+    background-color: rgb(161, 56, 161);
+}
+
+.labmasters .slider .images .text2 {
+    background-color: #3597ff;
+}
+
+.labmasters .slider .images .text3 {
+    background-color: #34aa61;
+}
+
+.labmasters .slider .images .text4 {
+    background-color: #c9a42e;
+}
+
+.labmasters .slider .images .text1, .text2, .text3, .text4 {
+    width: 600px; height: 450px;
+    border-radius: 10px;
+    padding: 35px;
+    color: #fff;
+    position: absolute;
+}
+
+.labmasters .slider .images span {
+    font-weight: bolder;
+}
+
+.labmasters .slider .images h5 {
+    padding: 20px; padding-left: 0;
+    font-size: 120%;
+}
+
+.labmasters .slider .images .line {
+    width: 50px;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 20px;
+}
+
+.labmasters .slider .images p {
+    margin: 20px 0;
+}
+
+.labmasters .slider .images h3 {
+    font-size: 150%;
+}
+
+.labmasters .slider .images .note {
+    height: 25%; width: 35%;
+}
+
+.labmasters .slider .images #grigot {
+    margin-top: -20px;
+}
+
+.labmasters .slider .dots {
+    display: flex;
+    justify-content: center;
+    margin-top: -50px;
+    padding-bottom: 10px;
+}
+
+.labmasters .slider .dots label {
+    height: 9px;
+    width: 9px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #95979b;
+    margin: 3px;
+    transition: all 0.15s ease;
+}
+
+.labmasters .slider .dots label:hover {
+    background-color: #2362e0;
+}
+
+#img1:checked ~ .m1 {
+    margin-left: 0;
+}
+
+#img2:checked ~ .m2 {
+    margin-left: -100%;
+}
+
+#img3:checked ~ .m3 {
+    margin-left: -200%;
+}
+
+#img4:checked ~ .m4 {
+    margin-left: -300%;
+}
