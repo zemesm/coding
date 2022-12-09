@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Eating Form</title>
+        <link rel="stylesheet" href="form-style.css">
+    </head>
+    <body>
+        <div class="form-container">
+            <div class="start">
+                <h1>Please answer the following questions</h1>
+                <p>The more accurate your answers, the better assessed your information are for creating the most suitable plan for you</p>
+            </div>
+            <form class="form">
+                <!-- questions -->
+                <div class="center">
+                    <h2>
+                        <span class="up">Q</span><span class="down">U</span>
+                        <span class="up">E</span><span class="down">S</span>
+                        <span class="up">T</span><span class="down">I</span>
+                        <span class="up">O</span><span class="down">N</span>
+                        <span class="up">S</span>
+                        <span style="margin-right: 25px;"></span>
+                        <span class="up">C</span><span class="down">O</span>
+                        <span class="up">N</span><span class="down">C</span>
+                        <span class="up">E</span><span class="down">R</span>
+                        <span class="up">N</span><span class="down">I</span>
+                        <span class="up">N</span><span class="down">G</span>
+                        <span style="margin-right: 25px;"></span>
+                        <span class="up">Y</span><span class="down">O</span>
+                        <span class="up">U</span><span class="down">R</span>
+                        <span style="margin-right: 25px;"></span>
+                        <span class="up">D</span><span class="down">I</span>
+                        <span class="up">E</span><span class="down">T</span>
+                    </h2>
+                </div>
+
+                <!-- goals -->
+                <label for="goals">What are your goals ?</label><br>
+                <input type="radio" class="radio" name="goals">Lose Weight<br>
+                <input type="radio" class="radio" name="goals">Maintain<br>
+                <input type="radio" class="radio" name="goals">Build Muscle<br>
+
+                <!-- age -->
+                <div class="wrapper">
+                    <div class="input-data">
+                        <input type="text" required pattern="\S+.*">
+                        <div class="underline"></div>
+                        <label>What is you age ?</label><br>
+                    </div>
+                </div>
+
+                <!-- weight -->
+                <div class="wrapper">
+                    <div class="input-data">
+                        <input type="text" required pattern="\S+.*">
+                        <div class="underline"></div>
+                        <label>What is you weight in kg ?</label><br>
+                    </div>
+                </div>
+
+                <!-- height -->
+                <div class="wrapper">
+                    <div class="input-data">
+                        <input type="text" required pattern="\S+.*">
+                        <div class="underline"></div>
+                        <label>What is you height in cm ?</label><br>
+                    </div>
+                </div>
+
+                <!-- sex -->
+                <label for="sex">What is your sex ?</label><br>
+                <input type="radio" class="radio" name="sex">Male<br>
+                <input type="radio" class="radio"  name="sex">Female<br>
+
+                <!-- experience nutrition -->
+                <div class="wrapper">
+                    <div class="input-data">
+                        <input type="text" required pattern="\S+.*">
+                        <div class="underline"></div>
+                        <label>Do you have any experience with t racking your nutrition ?</label><br>
+                    </div>
+                </div>
+
+                <!-- daily activity -->
+                <div class="wrapper">
+                    <div class="input-data">
+                        <input type="text" required pattern="\S+.*">
+                        <div class="underline"></div>
+                        <label>How active is your job and how active are you in your free time ?</label><br>
+                    </div>
+                </div>
+
+                <!-- activities you like -->
+                <div class="wrapper">
+                    <div class="input-data">
+                        <input type="text" required pattern="\S+.*">
+                        <div class="underline"></div>
+                        <label>What type of activity do you like ?</label><br>
+                    </div>
+                </div>
+
+                <!-- time you like to eat -->
+                <label>When do you feel hungry the most throughout the day / When do you prefer to eat the most ?</label><br>
+                <input type="radio" class="radio" name="time-of-eating">Breakfast<br>
+                <input type="radio" class="radio" name="time-of-eating">Lunch<br>
+                <input type="radio" class="radio" name="time-of-eating">Dinner<br>
+
+                <!-- unhealthy foods -->
+                <div class="wrapper">
+                    <div class="input-data">
+                        <input type="text" required pattern="\S+.*">
+                        <div class="underline"></div>
+                        <label>Which "unhealthy foods" do you like the most ? Name your top 5.</label><br>
+                    </div>
+                </div>
+
+                <!-- healthy foods -->
+                <div class="wrapper">
+                    <div class="input-data">
+                        <input type="text" required pattern="\S+.*">
+                        <div class="underline"></div>
+                        <label>Which "healthy foods" do you like the most ? Name at least 5.</label><br>
+                    </div>
+                </div>
+
+                <!-- alergies foods -->
+                <div class="wrapper">
+                    <div class="input-data">
+                        <input type="text" required pattern="\S+.*">
+                        <div class="underline"></div>
+                        <label>Do you have any alergies ?</label><br>
+                    </div>
+                </div>
+
+                <!-- budget eating -->
+                <div class="wrapper">
+                    <div class="input-data">
+                        <input type="text" required pattern="\S+.*">
+                        <div class="underline"></div>
+                        <label>Do you prefer eating on a budget or do you not mind spending more on food if it means your diet tastes better ?</label><br>
+                    </div>
+                </div>
+
+                <!-- artificial foods -->
+                <div class="wrapper">
+                    <div class="input-data">
+                        <input type="text" required pattern="\S+.*">
+                        <div class="underline"></div>
+                        <label>Are you ok with eating "arteficial" and "protein" foods in your diet ?</label><br>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </body>
+</html>

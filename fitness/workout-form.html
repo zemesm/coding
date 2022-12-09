@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Workout Form</title>
+        <link rel="stylesheet" href="form-style.css">
+    </head>
+    <body>
+        <div class="form-container">
+            <div class="start">
+                <h1>Please answer the following questions</h1>
+                <p>The more accurate your answers, the better assessed your information are for creating the most suitable plan for you</p>
+            </div>
+            <form class="form">
+                <div class="center">
+                    <!-- questions -->
+                    <h2>
+                        <span class="up">Q</span><span class="down">U</span>
+                        <span class="up">E</span><span class="down">S</span>
+                        <span class="up">T</span><span class="down">I</span>
+                        <span class="up">O</span><span class="down">N</span>
+                        <span class="up">S</span>
+                        <span style="margin-right: 25px;"></span>
+                        <span class="up">C</span><span class="down">O</span>
+                        <span class="up">N</span><span class="down">C</span>
+                        <span class="up">E</span><span class="down">R</span>
+                        <span class="up">N</span><span class="down">I</span>
+                        <span class="up">N</span><span class="down">G</span>
+                        <span style="margin-right: 25px;"></span>
+                        <span class="up">Y</span><span class="down">O</span>
+                        <span class="up">U</span><span class="down">R</span>
+                        <span style="margin-right: 25px;"></span>
+                        <span class="up">W</span><span class="down">O</span>
+                        <span class="up">R</span><span class="down">K</span>
+                        <span class="up">O</span><span class="down">U</span>
+                        <span class="up">T</span><span class="down">S</span>
+                    </h2>
+                </div>
+
+                <!-- experience -->
+                <div class="wrapper">
+                    <div class="input-data">
+                        <input type="text" required pattern="\S+.*">
+                        <div class="underline"></div>
+                        <label>Have you had any previous experience with training ? If so, how long have you been working out ?</label><br>
+                    </div>
+                </div>
+
+                <!-- time per day -->
+                <div class="wrapper">
+                    <div class="input-data">
+                        <input type="text" required pattern="\S+.*">
+                        <div class="underline"></div>
+                        <label>How much time per day do you want to work out ?</label><br>
+                    </div>
+                </div>
+
+                <!-- times per week -->
+                <div class="wrapper">
+                    <div class="input-data">
+                        <input type="text" required pattern="\S+.*">
+                        <div class="underline"></div>
+                        <label>How many times per week do you want to work out ?</label><br>
+                    </div>
+                </div>
+
+                <!-- age -->
+                <div class="wrapper">
+                    <div class="input-data">
+                        <input type="text" required pattern="\S+.*">
+                        <div class="underline"></div>
+                        <label>What is you age ?</label><br>
+                    </div>
+                </div>
+
+                <!-- weight -->
+                <div class="wrapper">
+                    <div class="input-data">
+                        <input type="text" required pattern="\S+.*">
+                        <div class="underline"></div>
+                        <label>What is you weight in kg ?</label><br>
+                    </div>
+                </div>
+
+                <!-- height -->
+                <div class="wrapper">
+                    <div class="input-data">
+                        <input type="text" required pattern="\S+.*">
+                        <div class="underline"></div>
+                        <label>What is you height in cm ?</label><br>
+                    </div>
+                </div>
+
+                <!-- sex -->
+                <label for="sex">What is your sex ?</label><br>
+                <input type="radio" class="radio" name="sex">Male<br>
+                <input type="radio" class="radio"  name="sex">Female<br>
+
+                <!-- injuries -->
+                <div class="wrapper">
+                    <div class="input-data">
+                        <input type="text" required pattern="\S+.*">
+                        <div class="underline"></div>
+                        <label>Have you had any injuries/madical conditions that impact your movement ability until today ?</label><br>
+                    </div>
+                </div>
+
+                <!-- goals -->
+                <label>What are your goals ?</label><br>
+                <input type="checkbox" class="checkbox">Strength<br>
+                <input type="checkbox" class="checkbox">Muscle<br>
+                <input type="checkbox" class="checkbox">Endurance<br>
+
+                <!-- priority -->
+                <label for="goals">Which muscles are your prioroty ?</label><br>
+                <input type="checkbox" class="checkbox">Chest<br>
+                <input type="checkbox" class="checkbox">Back<br>
+                <input type="checkbox" class="checkbox">Shoulders<br>
+                <input type="checkbox" class="checkbox">Biceps<br>
+                <input type="checkbox" class="checkbox">Triceps<br>
+                <input type="checkbox" class="checkbox">Quadriceps<br>
+                <input type="checkbox" class="checkbox">Hamstrings<br>
+                <input type="checkbox" class="checkbox">Calves<br>
+            </form>
+        </div>
+    </body>
+</html>

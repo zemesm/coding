@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all 0.3s linear;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+.form-container {
+    margin: 2% 6%;
+    box-shadow: 2px 2px 6px #000;
+    border-radius: 10px;
+}
+
+.form-container .start {
+    text-align: center;
+    margin-bottom: 3rem;
+    background-color: rgb(51, 166, 243);
+    padding: 1.2rem; padding-bottom: 30px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    text-align: center;
+    color: #fff;
+}
+
+.form-container h1 {
+    font-size: 2.5rem;
+}
+
+.form-container .center {
+    text-align: center;
+}
+
+.form-container h2 {
+    margin-bottom: 40px;
+    margin-right: auto; margin-left: auto;
+    width: fit-content;
+} 
+
+.form-container .form h2 .up {
+    font-size: 120%;
+    position: relative;
+    bottom: 3px;
+    color: rgb(51, 166, 243);
+    padding-right: 3px;
+    transition: 0.5s;
+}
+
+.form-container .form h2 .down {
+    position: relative;
+    top: 0;
+    transition: 0.5s;
+}
+
+.form-container h2:hover .up {
+    bottom: 7px;
+}
+
+.form-container .form h2:hover .down {
+    top: 4px;
+}
+
+.form-container .form {
+    padding: 2% 6%;
+}
+
+/*  */
+.form-container .form .wrapper {
+    width: 100%; height: 125px;
+    padding-top: 50px; padding-left: 5%; padding-right: 5%;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 60px;
+}
+
+.form-container .form .wrapper:hover {
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 5s ease;
+} 
+
+.form-container .form .input-data {
+    width: 100%;
+    height: 40px;
+    position: relative;
+}
+
+.form-container .form .input-data input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-bottom: solid 2px silver;
+    font-size: 17px;
+}
+
+.input-data .underline {
+    position: absolute;
+    bottom: 1px;
+    height: 2px;
+    width: 100%;
+}
+.input-data .underline::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: rgb(51, 166, 243);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    left: 0;
+}
+
+.input-data input:focus ~ .underline::before {
+    transform: scaleX(1);
+}
+
+.form-container .form .input-data label {
+    position: absolute;
+    left: 0;
+    color: silver;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.input-data input:focus ~ label {
+    transform: translateY(-27px);
+    font-size: 20px;
+}
+
+.input-data input:valid ~ label {
+    transform: translateY(-27px);
+}
+/*  */
+
+.form-container .form .wrap {
+    margin-bottom: 60px;
+}
+
+.form-container .form label {
+    display: inline-block;
+    margin: 10px 0;
+    font-size: 120%;
+    cursor: pointer;
+}
+
+.form-container .form .text {
+    margin: 5px 0;
+    padding: 0.5rem 1rem;
+    border: 2px solid rgba(91, 112, 160, 0.217);
+    background-color: rgba(230, 230, 230, 0.6);
+    font-size: 1.1rem;
+    transition: .3s;
+}

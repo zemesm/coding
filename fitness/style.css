@@ -1,0 +1,626 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all 0.3s linear;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+*::selection {
+    background-color: rgb(51, 166, 243);
+    color: #C0C0C0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* header */
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),
+    url(./images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    clip-path: polygon(100% 0, 100% 91%, 49% 100%, 0 89%, 0 0);
+    margin-bottom: 200px;
+}
+
+nav {
+    padding: 2% 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #C0C0C0;
+}
+
+nav .links {
+    padding-left: 0;
+}
+
+nav .links li {
+    display: inline-block;
+    margin-left: 1rem;
+    font-size: 1.5rem;
+}
+
+nav .links li a {
+    color: #C0C0C0;
+}
+
+.links .active {
+    color: rgb(51, 166, 243);
+}
+
+nav .links li a:hover {
+    color: rgb(51, 166, 243);
+}
+
+header .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+header .content h1 {
+    font-size: 8rem;
+    text-transform: uppercase;
+    color: #C0C0C0;
+    width: max-content;
+}
+
+header .content h1:hover {
+    /* color: #fff;
+    text-shadow: 0 0 10px #fff, 
+                 0 0 20px #fff,
+                 0 0 40px #fff,
+                 0 0 80px #fff,
+                 0 0 120px #fff; */
+    color: #fff;
+    text-shadow: 0 0 10px #C0C0C0, 
+                 0 0 20px #C0C0C0,
+                 0 0 40px #C0C0C0,
+                 0 0 80px #C0C0C0,
+                 0 0 120px #C0C0C0;
+    transition: 0.5s;
+}
+
+nav .open,.close {
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: rgb(51, 166, 243);
+    display: none;
+}
+
+@media (max-width:850px) {
+    nav .links {
+        height: 25rem;
+        width: 60%;
+        position: fixed;
+        top: 0;
+        right:0;
+        border-radius: 1.2rem;
+        background-color: #C0C0C0;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: 9999;
+    }
+
+    nav .links li {
+        font-size: 1.8rem;
+        margin: 0.5rem;
+    }
+
+    nav .links li a {
+        color: #000;
+    }
+
+    nav .open,nav .links .close {
+        display: block;
+        position: absolute;
+        top: 1.8rem;
+        right: 1.8rem;
+    }
+
+    header .content h1 {
+        font-size: 6rem;
+    }
+}
+
+/* about */
+
+.about .row {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2% 6%;
+    margin-bottom: 200px;
+}
+
+.about .row .image {
+    flex: 1 1 40rem;
+    padding: 2rem;
+}
+
+.about .row .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about .row .content {
+    flex: 1 1 40rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.about .row .content h1 {
+    font-size: 3rem;
+    color: rgb(51, 166, 243);
+    margin-bottom: 5rem;
+}
+
+.about .row .content p {
+    line-height: 1.7;
+    font-size: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+
+.about .row .content a {
+    color: rgb(51, 166, 243);
+}
+
+.about .row .content a:hover {
+    color: #fff;
+}
+
+/* services */
+
+.services {
+    min-height: 100vh;
+    text-align: center;
+    padding: 2% 6%;
+}
+
+.services h1 {
+    font-size: 3.8rem;
+    padding: 0.5rem;
+    display: inline-block;
+    color: rgb(51, 166, 243);
+    border-bottom: .3rem solid rgb(51, 166, 243);
+    margin-bottom: 1.8rem;
+}
+
+.services .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.services .container .box {
+    width: 31rem;
+    height: 31rem;
+    margin: .5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.services .container .box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.services .container .box .info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transform-origin: bottom;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.services .container .box:hover .info {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.services .container .box .info h3 {
+    font-size: 3rem;
+    color: rgb(51, 166, 243);
+    margin-bottom: 1.2rem;
+}
+
+.services .container .box .info p {
+    line-height: 2;
+    color: #C0C0C0;
+    font-size: 1.1rem;
+    padding: 0 1rem;
+    margin-bottom: 1.2rem;
+}
+
+/* coaches */
+
+.coaches {
+    min-height: 100vh;
+    text-align: center;
+    padding: 2% 6%;
+}
+
+.coaches h1 {
+    font-size: 3.8rem;
+    padding: 0.5rem;
+    padding-bottom: 0;
+    display: inline-block;
+    color: rgb(51, 166, 243);
+    border-bottom: .3rem solid rgb(51, 166, 243);
+    margin-bottom: 0;
+}
+
+.coaches p {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.coaches .items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.coaches .items .item {
+    height: 40rem;
+    width: 24rem;
+    margin: 5rem 1rem;
+    margin-top: 30px;
+    margin-bottom: 400px;
+}
+
+.coaches .item img {
+    width: 100%;
+    height: 100%;
+    border-radius: .6rem;
+    object-fit: cover;
+}
+
+.coaches .item .inner {
+    position: relative;
+    z-index: 9999;
+    padding: 0 1rem;
+}
+
+.coaches .item:hover {
+    transform: translateY(-20px);
+}
+
+.coaches .item .inner .info {
+    background-color: rgb(51, 166, 243);
+    padding: 1.2rem 1rem;
+    border-radius: 0.6rem;
+    margin-top: -2.5rem;
+}
+
+.coaches .item:hover .info {
+    transform: translateY(-30px);
+}
+
+.coaches .item .inner .info h4 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0;
+    color: #000;
+}
+
+.coaches .item .inner .info p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #333;
+    margin-top: .6rem;
+}
+
+.coaches .item .inner .info .links {
+    margin-top: 1rem;
+}
+
+.coaches .item .inner .info .links a {
+    display: inline-block;
+    height: 2rem;
+    width: 2rem;
+    background-color: #fff;
+    border-radius: 50%;
+    color: rgb(51, 166, 243);
+    text-align: center;
+    line-height: 2rem;
+    margin-left: 0.3rem;
+    font-size: 1.1rem;
+}
+
+.coaches .item .inner .info .links a:hover {
+    box-shadow: 0 0 .6rem #000;
+}
+
+/* weightlifting templates */
+
+.weightlifting-templates {
+    min-height: 100vh;
+    padding: 2% 6%;
+    text-align: center;
+}
+
+.weightlifting-templates h1 {
+    font-size: 3.8rem;
+    padding: 0.5rem;
+    padding-bottom: 0;
+    display: inline-block;
+    color: rgb(51, 166, 243);
+    border-bottom: .3rem solid rgb(51, 166, 243);
+    margin-bottom: 50px;
+}
+
+.weightlifting-templates .weightlifting-templates-tables h2 {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    background-color: rgb(51, 166, 243);
+    padding: 1.2rem;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.weightlifting-templates .weightlifting-templates-tables table {
+    display: inline;
+    padding: 25px;
+    font-size: larger;
+}
+
+.weightlifting-templates .weightlifting-templates-tables .days {
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px #000;
+    margin-bottom: 4rem;
+    padding-bottom: 20px;
+}
+
+.weightlifting-templates .weightlifting-templates-tables .days:hover {
+    transform: translateY(-30px);
+}
+
+.weightlifting-templates .weightlifting-templates-tables th {
+    padding: 15px;
+}
+
+/* calories templates */
+
+#calorie-templates {
+    min-height: 100vh;
+    padding: 2% 6%;
+    text-align: center;
+}
+
+#calorie-templates h1 {
+    font-size: 3.8rem;
+    padding: 0.5rem;
+    padding-bottom: 0;
+    display: inline-block;
+    color: rgb(51, 166, 243);
+    border-bottom: .3rem solid rgb(51, 166, 243);
+    margin-bottom: 50px;
+}
+
+#calorie-templates .calorie-templates-tables {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    grid-gap: 50px;
+    text-align: center;
+    margin-bottom: 200px;
+}
+
+#calorie-templates .calorie-templates-tables h2 {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    background-color: rgb(51, 166, 243);
+    padding: 1.2rem;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+#calorie-templates .calorie-templates-tables table {
+    display: inline;
+    padding: 25px;
+    font-size: larger;
+}
+
+#calorie-templates .calorie-templates-tables .days {
+    width: 30rem;
+    box-shadow: 2px 2px 6px #000;
+    margin-bottom: 4rem;
+    border-radius: 10px;
+    height: 1100px;
+}
+
+#calorie-templates .calorie-templates-tables .days:hover {
+    transform: translateY(-30px);
+}
+
+#calorie-templates .calorie-templates-tables .days .macros {
+    
+}
+
+#calorie-templates .calorie-templates-tables th {
+    padding-top: 30px;
+}
+
+/* plans */
+
+.plans_table {
+    min-height: 100vh;
+    padding: 2% 6%;
+    text-align: center;
+}
+
+.plans_table h1 {
+    font-size: 3.8rem;
+    padding: 0.5rem;
+    display: inline-block;
+    color: rgb(51, 166, 243);
+    border-bottom: .3rem solid rgb(51, 166, 243);
+    margin-bottom: 50px;
+}
+
+.plans_table .plans_card {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-bottom: 200px;
+}
+
+.plans_card .plans_box {
+    width: 30rem;
+    box-shadow: 2px 2px 6px #000;
+    margin-bottom: 4rem;
+    border-radius: 10px;
+}
+
+.plans_card .plans_box:hover {
+    transform: translateY(-30px);
+}
+
+.plans_box h2 {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    background-color: rgb(51, 166, 243);
+    padding: 1.2rem;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.plans_box h3 {
+    margin-top: 2rem;
+    font-size: 4rem;
+    color: rgb(51, 166, 243);
+}
+
+.plans_box h3 sup {
+    font-size: 2rem;
+}
+
+.plans_box h3 span {
+    font-size: 2.5rem;
+}
+
+.plans_box ul {
+    padding: 2rem;
+}
+
+.plans_box ul li {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.plans_box .btn {
+    margin-bottom: 2rem;
+}
+
+.btn {
+    padding: 0.5rem 1.5rem;
+    background-color: transparent;
+    border: 0.3rem solid rgb(51, 166, 243);
+    color: rgb(51, 166, 243);
+    margin-top: 1.8rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    font-size: 2rem;
+}
+
+.btn:hover {
+    background-color: rgb(51, 166, 243);
+    color: #fff;
+}
+
+/* register */
+
+.register {
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+    url(./images/register.jpg);
+    min-height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+.register h1 {
+    font-size: 3.8rem;
+    padding: 0.5rem;
+    display: inline-block;
+    color: rgb(51, 166, 243);
+    border-bottom: .3rem solid rgb(51, 166, 243);
+    margin-bottom: 2.2rem;
+}
+
+.register form {
+    padding: 2% 6%;
+    margin: 0 auto;
+}
+
+.register form .input_box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.register form .input_box input,textarea {
+    height: 4rem;
+    width: 49%;
+    background-color: transparent;
+    color: #C0C0C0;
+    padding: 3rem 1rem;
+    margin: 1rem 0;
+    font-size: 2rem;
+    border: 1px solid #C0C0C0;
+}
+
+.register form textarea {
+    height: 20rem;
+    width: 100%;
+    resize: none;
+    padding: 1rem;
+}
+
+.register form .btn a {
+    color: rgb(51, 166, 243);
+}
+
+.register form .btn a:hover {
+    color: #fff;
+}
+
+@media (max-width:1100px) {
+    .register form .input_box input{
+        width: 100%;
+    }
+}
